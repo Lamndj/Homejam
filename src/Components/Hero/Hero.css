@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito&family=Open+Sans&display=swap");
+
+.hero {
+  height: 862px;
+  background: linear-gradient(
+      180deg,
+      rgba(5, 11, 20, 0.28) 0%,
+      rgba(1, 13, 32, 0.69) 67.53%,
+      #0a0b1a 85.33%
+    ),
+    url("../../assets/bg_img.png");
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 248px 150px 0 150px;
+}
+
+.hero__title {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 96px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+}
+
+.hero__description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.hero__analytics {
+  display: flex;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin: 220px 0 0 0;
+  padding-left: 29px;
+}
+
+.hero__single__analytic {
+  border-radius: 50%;
+  width: 208px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.2; */
+  border: 1px solid #282d3a;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hero__analytics__path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 275;
+  stroke-dashoffset: 70;
+}
+
+.hero__single__analytic p {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin: 12px 0 0 0;
+}
+
+.hero__single__analytic label {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #84858c;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 624px;
+    background-position: center;
+    background-size: cover;
+    padding: 292px 28px 0 16px;
+    overflow: visible;
+  }
+  .hero__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hero__analytics {
+    margin-top: 126px;
+    padding-left: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: -400px;
+  }
+  .hero__analytics::-webkit-scrollbar {
+    display: none;
+  }
+  .hero__single__analytic {
+    min-width: 144px;
+    height: 144px;
+    margin-right: 20px;
+  }
+  .hero__analytics__path {
+    stroke-dasharray: 198;
+    stroke-dashoffset: 70;
+  }
+  .hero__single__analytic label {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}

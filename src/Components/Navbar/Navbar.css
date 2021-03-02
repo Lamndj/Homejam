@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 124px 2px 140px;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__list li {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.navbar__list li p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar__searchIcon {
+  margin-right: 6px;
+}
+
+.navbar__phone__icon {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 11px 0px 0 16px;
+  }
+  .navbar__phone__icon {
+    display: block;
+  }
+  .navbar__phone__icon img {
+    height: 16.49px;
+  }
+  .navbar__list li p {
+    display: none;
+  }
+  .navbar__list__desktop__icon {
+    display: none !important;
+  }
+  .navbar__list li {
+    margin-right: 24px;
+  }
+}
